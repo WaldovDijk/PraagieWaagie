@@ -1,7 +1,7 @@
 import express from "express";
 import bodyparser from "body-parser";
 import cors from "cors";
-import Valuta from "./router/valuta";
+import morgan from "morgan";
 import valuta from "./router/valuta";
 
 const app = express();
@@ -14,6 +14,7 @@ app.use(
 );
 app.use(express.static("public"));
 app.use(cors());
+app.use(morgan("tiny"));
 
 app.use(valuta);
 

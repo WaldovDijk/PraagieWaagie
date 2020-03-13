@@ -19,6 +19,8 @@
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "money": "^0.2.0",
+    "morgan": "^1.9.1",
+    "node-cache": "^5.1.0",
     "nodejs-currency-converter": "^1.0.2"
   },
   "devDependencies": {
